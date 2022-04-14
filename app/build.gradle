@@ -25,9 +25,29 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    //kích hoạt viewBinding
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+ext {
+    retrofit_version = '2.9.0'
 }
 
 dependencies {
+
+    implementation "androidx.navigation:navigation-fragment:2.4.2"
+    implementation "androidx.navigation:navigation-ui:2.4.2"
+
+
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+
+    // RecyclerView
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+    implementation "androidx.recyclerview:recyclerview-selection:1.1.0"
 
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
