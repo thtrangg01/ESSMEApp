@@ -19,6 +19,8 @@ abstract public class BaseFragment<VB extends ViewBinding, VM extends BaseViewMo
         this.inflate = inflate;
     }
 
+    protected abstract Class<VM> getViewModel();
+    
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
@@ -28,5 +30,5 @@ abstract public class BaseFragment<VB extends ViewBinding, VM extends BaseViewMo
         return binding.getRoot();
     }
 
-    protected abstract Class<VM> getViewModel();
+   
 }
