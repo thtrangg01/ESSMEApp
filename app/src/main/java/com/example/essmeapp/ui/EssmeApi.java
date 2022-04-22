@@ -1,4 +1,4 @@
-package com.example.essmeapp.service;
+package com.example.essmeapp.ui;
 
 import com.example.essmeapp.model.HomePage;
 import com.example.essmeapp.model.Question;
