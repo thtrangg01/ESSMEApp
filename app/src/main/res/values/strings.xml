@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ESSMEApp</string>
+    <string name="fields">Fields</string>
 </resources>
