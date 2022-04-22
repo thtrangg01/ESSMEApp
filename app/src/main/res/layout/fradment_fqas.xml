@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fqas.FQAsFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginStart="@dimen/d_8"
+        android:layout_marginTop="@dimen/d_8"
+        android:id="@+id/lstQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_functional_question_answers" />
+
+</FrameLayout>

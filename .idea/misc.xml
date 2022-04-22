@@ -3,12 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+
+        <entry key="..\:/code/android/ESSMEApp/app/src/main/res/layout/fradment_fqas.xml" value="0.2657407407407407" />
+        <entry key="..\:/code/android/ESSMEApp/app/src/main/res/layout/item_answer.xml" value="0.26851851851851855" />
+        <entry key="..\:/code/android/ESSMEApp/app/src/main/res/layout/item_functional_question_answers.xml" value="0.26851851851851855" />
+
         <entry key="app/src/main/res/drawable/bg_rounded_8dp_no_ripple.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/bg_rounded_8dp_no_ripple_white.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_field.xml" value="0.9928571428571429" />
         <entry key="app/src/main/res/layout/fragment_home_page.xml" value="0.19114583333333332" />
         <entry key="app/src/main/res/layout/item_field.xml" value="0.9928571428571429" />
+
       </map>
     </option>
   </component>

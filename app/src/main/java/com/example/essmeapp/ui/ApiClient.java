@@ -1,4 +1,4 @@
-package com.example.essmeapp.service;
+package com.example.essmeapp.ui;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
