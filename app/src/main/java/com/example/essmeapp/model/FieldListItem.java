@@ -4,19 +4,20 @@ import java.util.List;
 
 
 public class FieldListItem {
-    private List<Fields> fields;
+    private List<ResearchArea> fields;
 
-    public FieldListItem() { }
-
-    public FieldListItem(List<Fields> fields) {
+    public FieldListItem(List<ResearchArea> fields) {
         this.fields = fields;
     }
 
-    public List<Fields> getFields() {
+    public List<ResearchArea> getFields() {
         return fields;
     }
 
-    public void setFields(List<Fields> fields) {
+    public void setFields(List<ResearchArea> fields) {
         this.fields = fields;
+    }
+
+    public FieldListItem() {
     }
 }
