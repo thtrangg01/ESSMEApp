@@ -50,7 +50,7 @@ abstract public class BaseSimpleAdapter<T, VB extends ViewBinding, VH extends Ba
 
     public abstract VH getViewHolder(VB binding);
 
-    protected abstract static class ViewHolder<VB extends ViewBinding> extends RecyclerView.ViewHolder {
+    public abstract static class ViewHolder<VB extends ViewBinding> extends RecyclerView.ViewHolder {
         protected VB binding;
 
         public ViewHolder(@NonNull VB binding) {
