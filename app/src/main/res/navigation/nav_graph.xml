@@ -10,4 +10,9 @@
         android:name="com.example.essmeapp.ui.homepage.HomePageFragment"
         android:label="HomePageFragment"
         tools:layout="@layout/fragment_home_page" />
+    <fragment
+        android:id="@+id/FQAsFragment"
+        android:name="com.example.essmeapp.ui.fqas.FQAsFragment"
+        android:label="fragment_fqas"
+        tools:layout="@layout/fragment_fqas" />
 </navigation>

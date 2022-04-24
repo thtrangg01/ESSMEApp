@@ -1,5 +1,6 @@
 package com.example.essmeapp.service;
 
+import com.example.essmeapp.model.ExpertResponse;
 import com.example.essmeapp.model.Fields;
 import com.example.essmeapp.model.HomePage;
 import com.example.essmeapp.model.Question;
@@ -19,4 +20,7 @@ public interface EssmeApi {
 
     @GET("experts/field")
     Call<List<Fields>> getFields();
+
+    @GET("experts/search?what=khoa&radius=5&page=0&size=100&asc=true")
+    Call<ExpertResponse> getExperts();
 }
