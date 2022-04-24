@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/NEU/2021-2022/Second_term/Androi_PTUDDD/ESSMEApp/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.234" />
+        <entry key="..\:/NEU/2021-2022/Second_term/Androi_PTUDDD/ESSMEApp/app/src/main/res/drawable/pie_btn_8dp.xml" value="0.121" />
+        <entry key="..\:/NEU/2021-2022/Second_term/Androi_PTUDDD/ESSMEApp/app/src/main/res/drawable/pie_recrangle_8dp_left.xml" value="0.121" />
+        <entry key="..\:/NEU/2021-2022/Second_term/Androi_PTUDDD/ESSMEApp/app/src/main/res/drawable/pie_rectangle_4dp_stroke.xml" value="0.121" />
+        <entry key="..\:/NEU/2021-2022/Second_term/Androi_PTUDDD/ESSMEApp/app/src/main/res/drawable/pie_rectangle_8dp_stroke_right.xml" value="0.121" />
+        <entry key="..\:/NEU/2021-2022/Second_term/Androi_PTUDDD/ESSMEApp/app/src/main/res/layout/fragment_expert.xml" value="0.25" />
+        <entry key="..\:/NEU/2021-2022/Second_term/Androi_PTUDDD/ESSMEApp/app/src/main/res/layout/fragment_personal_infor_customer.xml" value="0.10989583333333333" />
+        <entry key="..\:/NEU/2021-2022/Second_term/Androi_PTUDDD/ESSMEApp/app/src/main/res/layout/fragment_personal_infor_expert.xml" value="0.2" />
         <entry key="..\:/code/android/ESSMEApp/app/src/main/res/drawable/bg_rounded_8dp_no_ripple_white.xml" value="0.1085" />
         <entry key="..\:/code/android/ESSMEApp/app/src/main/res/drawable/ic_answer.xml" value="0.1025" />
         <entry key="..\:/code/android/ESSMEApp/app/src/main/res/drawable/ic_question.xml" value="0.1085" />
