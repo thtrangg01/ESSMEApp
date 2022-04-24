@@ -1,23 +1,17 @@
 package com.example.essmeapp.ui.hptopexpert;
 
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 
 import com.example.essmeapp.codebase.BaseViewBindingFragment;
-import com.example.essmeapp.codebase.IFragmentInflate;
-import com.example.essmeapp.databinding.FragmentExpertBinding;
+import com.example.essmeapp.databinding.FragmentTopExpertBinding;
 import com.example.essmeapp.model.Expert;
 
 
-public class ExpertFragment extends BaseViewBindingFragment<FragmentExpertBinding> {
+public class TopExpertFragment extends BaseViewBindingFragment<FragmentTopExpertBinding> {
 
-    public ExpertFragment() {
-        super(FragmentExpertBinding::inflate);
+    public TopExpertFragment() {
+        super(FragmentTopExpertBinding::inflate);
     }
 
     @Override

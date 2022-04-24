@@ -5,7 +5,7 @@ import android.view.View;
 import com.example.essmeapp.codebase.BaseViewBindingFragment;
 import com.example.essmeapp.databinding.FragmentFqasBinding;
 import com.example.essmeapp.model.Question;
-import com.example.essmeapp.ui.ApiClient;
+import com.example.essmeapp.service.ApiClient;
 
 import java.util.ArrayList;
 import java.util.List;

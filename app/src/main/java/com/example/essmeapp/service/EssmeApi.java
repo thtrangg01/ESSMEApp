@@ -1,5 +1,6 @@
 package com.example.essmeapp.service;
 
+import com.example.essmeapp.model.Fields;
 import com.example.essmeapp.model.HomePage;
 import com.example.essmeapp.model.Question;
 
@@ -15,4 +16,7 @@ public interface EssmeApi {
 
     @GET("questions?limit=1000&sort=createdAt&desc=false")
     Call<List<Question>> getQuestions();
+
+    @GET("experts/field")
+    Call<List<Fields>> getFields();
 }
