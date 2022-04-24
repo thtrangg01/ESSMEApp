@@ -28,7 +28,7 @@ public class FieldViewPagerAdapter extends FragmentStateAdapter {
         Gson gson = new Gson();
         String fieldJson = gson.toJson(item.getFields());
         bundle.putString("list_fields", fieldJson);
-        FieldsFragment fieldsFragment = new FieldsFragment();
+        TopFieldsFragment fieldsFragment = new TopFieldsFragment();
         fieldsFragment.setArguments(bundle);
         return fieldsFragment;
     }

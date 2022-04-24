@@ -8,7 +8,6 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import com.example.essmeapp.model.Expert;
-import com.example.essmeapp.ui.hptopexpert.ExpertFragment;
 
 import java.util.List;
 
@@ -26,7 +25,7 @@ public class TopExpertAdapter extends FragmentStateAdapter {
         Expert expert = experts.get(position);
         Bundle bundle = new Bundle();
         bundle.putSerializable("expert", expert);
-        ExpertFragment expertFragment = new ExpertFragment();
+        TopExpertFragment expertFragment = new TopExpertFragment();
         expertFragment.setArguments(bundle);
         return expertFragment;
     }

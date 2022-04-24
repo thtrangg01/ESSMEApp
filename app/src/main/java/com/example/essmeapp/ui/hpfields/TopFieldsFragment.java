@@ -6,20 +6,20 @@ import android.view.View;
 import androidx.recyclerview.widget.GridLayoutManager;
 
 import com.example.essmeapp.codebase.BaseViewBindingFragment;
-import com.example.essmeapp.databinding.FragmentFieldBinding;
+import com.example.essmeapp.databinding.FragmentTopFieldBinding;
 import com.example.essmeapp.model.ResearchArea;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import java.util.List;
 
-public class FieldsFragment extends BaseViewBindingFragment<FragmentFieldBinding> {
+public class TopFieldsFragment extends BaseViewBindingFragment<FragmentTopFieldBinding> {
 
     private FieldAdapter adapter;
     private List<ResearchArea> fields;
 
-    public FieldsFragment() {
-        super(FragmentFieldBinding::inflate);
+    public TopFieldsFragment() {
+        super(FragmentTopFieldBinding::inflate);
     }
 
     @Override
