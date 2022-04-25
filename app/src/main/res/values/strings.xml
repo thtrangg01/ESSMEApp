@@ -5,4 +5,6 @@
     <string name="common_expert">Expert</string>
     <string name="common_home">Home</string>
     <string name="common_account">Account</string>
+    <string name="fqas">FQAs</string>
+    <string name="leading_expert">Leading Expert</string>
 </resources>
