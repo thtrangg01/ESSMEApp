@@ -1,13 +1,23 @@
 <resources>
-    <string name="app_name">ESSMEApp</string>
+    <string name="app_name">ESSME</string>
+    <string name="leading_expert">Leading Expert</string>
     <string name="fields">Fields</string>
-    <string name="demo_answer">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate ...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="common_expert">Expert</string>
     <string name="common_home">Home</string>
     <string name="common_account">Account</string>
     <string name="fqas">FQAs</string>
+
     <string name="leading_expert">Leading Expert</string>
+
     <string name="Expert_name">Expert Name</string>
     <string name="Position">Position</string>
     <string name="company_university">Company/University</string>
+    <string name="order_expert">order Expert</string>
+    <string name="hint_requirement">Enter your requirement ...</string>
+    <string name="send">Send</string>
+    <string name="information_technology">Information Technology</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="gets_to_know_with_essme">Gets to know with ESSME</string>
 </resources>

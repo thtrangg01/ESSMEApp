@@ -3,16 +3,61 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homePageFragment">
+    app:startDestination="@id/loginFragment">
 
     <fragment
         android:id="@+id/homePageFragment"
         android:name="com.example.essmeapp.ui.homepage.HomePageFragment"
         android:label="HomePageFragment"
-        tools:layout="@layout/fragment_home_page" />
+        tools:layout="@layout/fragment_home_page">
+        <argument
+            android:name="isHomePage"
+            android:defaultValue="true"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_homePageFragment_to_FQAsFragment"
+            app:destination="@id/FQAsFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_expertFragment"
+            app:destination="@id/expertFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homePageFragmentNotHasExpert"
+        android:name="com.example.essmeapp.ui.homepage.HomePageFragment"
+        android:label="HomePageFragment"
+        tools:layout="@layout/fragment_home_page">
+        <argument
+            android:name="isHomePage"
+            android:defaultValue="false"
+            app:argType="boolean" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.essmeapp.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_accountFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
     <fragment
         android:id="@+id/FQAsFragment"
         android:name="com.example.essmeapp.ui.fqas.FQAsFragment"
         android:label="fragment_fqas"
         tools:layout="@layout/fragment_fqas" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.essmeapp.ui.LoginFragment"
+        tools:layout="@layout/activity_login"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/expertFragment"
+        android:name="com.example.essmeapp.ui.listexpert.ExpertFragment"
+        android:label="ExpertFragment" />
 </navigation>
