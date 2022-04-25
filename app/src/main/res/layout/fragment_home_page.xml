@@ -6,10 +6,44 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="@dimen/d_16">
+        android:paddingStart="@dimen/d_16"
+        android:paddingTop="@dimen/d_16"
+        android:paddingEnd="@dimen/d_16">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lytLeadingExpert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded_8dp_no_ripple"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtExpert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/d_8"
+                    android:paddingTop="@dimen/d_8"
+                    android:paddingEnd="@dimen/d_8"
+                    android:text="@string/leading_expert"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/lstExpert"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/lytField"
@@ -38,7 +72,35 @@
                     android:layout_height="match_parent" />
             </LinearLayout>
 
-    </ScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_16"
+                android:background="@drawable/bg_rounded_8dp_no_ripple"
+                android:minHeight="400dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtFQAs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/d_8"
+                    android:paddingTop="@dimen/d_8"
+                    android:paddingEnd="@dimen/d_8"
+                    android:text="@string/fqas"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
 
     <TextView
         android:layout_width="match_parent"
