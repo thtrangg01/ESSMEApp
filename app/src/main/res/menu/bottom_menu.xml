@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homePageFragmentNotHasExpert"
+        android:icon="@drawable/ic_home"
+        android:title="@string/common_expert" />
+    <item
+        android:id="@+id/homePageFragment"
+        android:icon="@drawable/ic_home"
+        android:title="@string/common_home" />
+    <item
+        android:id="@+id/accountFragment"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="@string/common_account" />
+</menu>

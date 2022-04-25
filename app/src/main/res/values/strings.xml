@@ -2,5 +2,7 @@
     <string name="app_name">ESSMEApp</string>
     <string name="fields">Fields</string>
     <string name="demo_answer">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate ...</string>
-
+    <string name="common_expert">Expert</string>
+    <string name="common_home">Home</string>
+    <string name="common_account">Account</string>
 </resources>
