@@ -4,6 +4,7 @@ import com.example.essmeapp.model.ExpertResponse;
 import com.example.essmeapp.model.Fields;
 import com.example.essmeapp.model.HomePage;
 import com.example.essmeapp.model.Question;
+import com.example.essmeapp.model.ResearchArea;
 
 import java.util.List;
 
@@ -23,4 +24,7 @@ public interface EssmeApi {
 
     @GET("experts/search?what=khoa&radius=5&page=0&size=100&asc=true")
     Call<ExpertResponse> getExperts();
+
+    @GET("research_area")
+    Call<List<ResearchArea>> getResearchArea();
 }
