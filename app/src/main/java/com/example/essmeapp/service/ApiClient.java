@@ -1,14 +1,12 @@
 package com.example.essmeapp.service;
 
-import android.view.View;
-
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import okhttp3.OkHttpClient;
-import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+
+//import okhttp3.logging.HttpLoggingInterceptor;
 
 public class ApiClient {
 
@@ -22,18 +20,18 @@ public class ApiClient {
                 .setDateFormat("yyyy-MM-dd HH:mm:ss")
                 .create();
 
-        HttpLoggingInterceptor httpLoggingInterceptor = new HttpLoggingInterceptor();
-        httpLoggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
-
-        OkHttpClient okHttpClient = new OkHttpClient.Builder()
-                .addInterceptor(httpLoggingInterceptor)
-                .build();
+//        HttpLoggingInterceptor httpLoggingInterceptor = new HttpLoggingInterceptor();
+//        httpLoggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
+//
+//        OkHttpClient okHttpClient = new OkHttpClient.Builder()
+//                .addInterceptor(httpLoggingInterceptor)
+//                .build();
 
         if (retrofit == null)
             retrofit = new Retrofit.Builder()
                     .baseUrl(url)
                     .addConverterFactory(GsonConverterFactory.create(gson))
-                    .client(okHttpClient)
+//                    .client(okHttpClient)
                     .build();
         return retrofit.create(EssmeApi.class);
     }
