@@ -13,8 +13,7 @@ import com.google.gson.Gson;
 import java.util.List;
 
 public class FieldViewPagerAdapter extends FragmentStateAdapter {
-
-    private List<FieldListItem> list;
+    private List<FieldListItem> fieldListItems;
 
     public FieldViewPagerAdapter(@NonNull FragmentActivity fragmentActivity) {
         super(fragmentActivity);
@@ -23,26 +22,26 @@ public class FieldViewPagerAdapter extends FragmentStateAdapter {
     @NonNull
     @Override
     public Fragment createFragment(int position) {
-        FieldListItem item = list.get(position);
+        FieldListItem item = fieldListItems.get(position);
         Bundle bundle = new Bundle();
         Gson gson = new Gson();
         String fieldJson = gson.toJson(item.getFields());
         bundle.putString("list_fields", fieldJson);
-        TopFieldsFragment fieldsFragment = new TopFieldsFragment();
+        FieldsFragment fieldsFragment = new FieldsFragment();
         fieldsFragment.setArguments(bundle);
         return fieldsFragment;
     }
 
     @Override
     public int getItemCount() {
-        if (list != null) {
-            return list.size();
+        if (fieldListItems != null) {
+            return fieldListItems.size();
         }
         return 0;
     }
 
     public void submitData(List<FieldListItem> items) {
-        this.list = items;
+        this.fieldListItems = items;
         notifyDataSetChanged();
     }
 }

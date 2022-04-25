@@ -4,12 +4,10 @@ import androidx.annotation.NonNull;
 
 import com.example.essmeapp.R;
 import com.example.essmeapp.codebase.BaseSimpleAdapter;
-import com.example.essmeapp.codebase.IFragmentInflate;
 import com.example.essmeapp.databinding.ItemFunctionalQuestionAnswersBinding;
 import com.example.essmeapp.model.Question;
 
 public class QuestionAdapter extends BaseSimpleAdapter<Question, ItemFunctionalQuestionAnswersBinding, QuestionAdapter.ViewHolder> {
-
     private AnswerAdapter answerAdapter;
 
     public QuestionAdapter() {
@@ -39,4 +37,5 @@ public class QuestionAdapter extends BaseSimpleAdapter<Question, ItemFunctionalQ
                 binding.lstAnswer.setAdapter(answerAdapter);
             }
         }
-    }}
+    }
+}

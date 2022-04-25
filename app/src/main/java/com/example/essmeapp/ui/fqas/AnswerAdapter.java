@@ -8,7 +8,10 @@ import com.example.essmeapp.databinding.ItemAnswerBinding;
 import com.example.essmeapp.model.Answer;
 
 public class AnswerAdapter extends BaseSimpleAdapter<Answer, ItemAnswerBinding, AnswerAdapter.ViewHolder> {
-    public AnswerAdapter() {super(ItemAnswerBinding::inflate);}
+
+    public AnswerAdapter() {
+        super(ItemAnswerBinding::inflate);
+    }
 
     @Override
     public ViewHolder getViewHolder(ItemAnswerBinding binding) {

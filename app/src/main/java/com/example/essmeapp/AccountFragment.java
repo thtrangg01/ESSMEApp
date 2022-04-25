@@ -20,7 +20,10 @@ public class AccountFragment extends BaseViewBindingFragment<FragmentAccountBind
                 ((MainActivity) getActivity()).signOut();
                 break;
             case R.id.btnOrderHistory:
-                Navigation.findNavController(view).navigate(R.id.action_accountFragment_to_fragmentOrderExpert);
+                Navigation.findNavController(view).navigate(R.id.action_accountFragment_to_fragmentOrderHistory);
+                break;
+            case R.id.btnPersonalInfo:
+                Navigation.findNavController(view).navigate(R.id.action_accountFragment_to_personalInformationFragment);
                 break;
         }
     }
@@ -39,6 +42,7 @@ public class AccountFragment extends BaseViewBindingFragment<FragmentAccountBind
     public void initializeEvents() {
         binding.btnSignOut.setOnClickListener(this);
         binding.btnOrderHistory.setOnClickListener(this);
+        binding.btnPersonalInfo.setOnClickListener(this);
     }
 
     @Override

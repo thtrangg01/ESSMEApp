@@ -23,12 +23,10 @@ public class FQAsFragment extends BaseViewBindingFragment<FragmentFqasBinding> {
 
     @Override
     public void onClick(View view) {
-
     }
 
     @Override
     public void initializeViews() {
-
     }
 
     @Override
@@ -39,7 +37,6 @@ public class FQAsFragment extends BaseViewBindingFragment<FragmentFqasBinding> {
 
     @Override
     public void initializeEvents() {
-
     }
 
     @Override
@@ -59,4 +56,3 @@ public class FQAsFragment extends BaseViewBindingFragment<FragmentFqasBinding> {
         });
     }
 }
-

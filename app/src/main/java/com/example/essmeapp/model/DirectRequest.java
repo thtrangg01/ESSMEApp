@@ -4,10 +4,6 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
 
-/**
- * Created by Phucpt on 25/04/2022
- */
-
 public class DirectRequest {
     private String title;
     private String content;

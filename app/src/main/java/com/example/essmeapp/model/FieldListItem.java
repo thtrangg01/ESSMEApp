@@ -2,22 +2,21 @@ package com.example.essmeapp.model;
 
 import java.util.List;
 
-
 public class FieldListItem {
-    private List<ResearchArea> fields;
+    private List<Fields> fields;
 
-    public FieldListItem(List<ResearchArea> fields) {
+    public FieldListItem() {
+    }
+
+    public FieldListItem(List<Fields> fields) {
         this.fields = fields;
     }
 
-    public List<ResearchArea> getFields() {
+    public List<Fields> getFields() {
         return fields;
     }
 
-    public void setFields(List<ResearchArea> fields) {
+    public void setFields(List<Fields> fields) {
         this.fields = fields;
-    }
-
-    public FieldListItem() {
     }
 }

@@ -7,7 +7,6 @@ import com.example.essmeapp.databinding.ItemExpertBinding;
 import com.example.essmeapp.model.Expert;
 
 public class ExpertAdapter extends BaseSimpleAdapter<Expert, ItemExpertBinding, ExpertAdapter.ExpertViewHolder> {
-
     public ExpertAdapter() {
         super(ItemExpertBinding::inflate);
     }
@@ -17,7 +16,13 @@ public class ExpertAdapter extends BaseSimpleAdapter<Expert, ItemExpertBinding, 
         return new ExpertViewHolder(binding);
     }
 
-    public class ExpertViewHolder extends BaseSimpleAdapter.ViewHolder<ItemExpertBinding>{
+    @Override
+    public void onBindViewHolder(@NonNull ExpertViewHolder holder, int position) {
+        super.onBindViewHolder(holder, position);
+        registerOnItemClickListener(holder);
+    }
+
+    public class ExpertViewHolder extends ViewHolder<ItemExpertBinding> {
 
         public ExpertViewHolder(@NonNull ItemExpertBinding binding) {
             super(binding);

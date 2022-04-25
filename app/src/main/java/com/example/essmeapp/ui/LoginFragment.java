@@ -7,7 +7,6 @@ import com.example.essmeapp.R;
 import com.example.essmeapp.codebase.BaseViewBindingFragment;
 import com.example.essmeapp.databinding.FragmentLoginBinding;
 
-
 public class LoginFragment extends BaseViewBindingFragment<FragmentLoginBinding> {
     public LoginFragment() {
         super(FragmentLoginBinding::inflate);
