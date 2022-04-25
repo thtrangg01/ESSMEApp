@@ -16,6 +16,10 @@
         <entry key="..\:/NEU/2021-2022/Second_term/Androi_PTUDDD/ESSMEApp/app/src/main/res/layout/fragment_personal_infor_expert.xml" value="0.2" />
         <entry key="..\:/NEU/2021-2022/Second_term/Androi_PTUDDD/ESSMEApp/app/src/main/res/layout/fragment_qa_history.xml" value="0.1" />
         <entry key="..\:/NEU/2021-2022/Second_term/Androi_PTUDDD/ESSMEApp/app/src/main/res/menu/bottom_menu.xml" value="0.25" />
+        <entry key="..\:/Users/phamt/AndroidStudioProjects/ESSMEApp/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1" />
+        <entry key="..\:/Users/phamt/AndroidStudioProjects/ESSMEApp/app/src/main/res/drawable/pie_recrangle_8dp_left.xml" value="0.1" />
+        <entry key="..\:/Users/phamt/AndroidStudioProjects/ESSMEApp/app/src/main/res/drawable/pie_rectangle_4dp_stroke.xml" value="0.1" />
+        <entry key="..\:/Users/phamt/AndroidStudioProjects/ESSMEApp/app/src/main/res/drawable/pie_rectangle_8dp_stroke_right.xml" value="0.1" />
         <entry key="..\:/code/android/ESSMEApp/app/src/main/res/drawable/bg_rounded_8dp_no_ripple_white.xml" value="0.1085" />
         <entry key="..\:/code/android/ESSMEApp/app/src/main/res/drawable/ic_answer.xml" value="0.1025" />
         <entry key="..\:/code/android/ESSMEApp/app/src/main/res/drawable/ic_question.xml" value="0.1085" />
@@ -40,7 +44,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="16" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
