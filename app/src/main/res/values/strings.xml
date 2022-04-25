@@ -5,4 +5,7 @@
     <string name="common_expert">Expert</string>
     <string name="common_home">Home</string>
     <string name="common_account">Account</string>
+    <string name="Expert_name">Expert Name</string>
+    <string name="Position">Position</string>
+    <string name="company_university">Company/University</string>
 </resources>
