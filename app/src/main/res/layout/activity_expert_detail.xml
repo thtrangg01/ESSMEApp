@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="100dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginBottom="100dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/bg_rounded_8dp_no_ripple"
+        android:backgroundTint="@color/teal_primary">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_button_circle"
+            android:backgroundTint="@color/white">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/ic_baseline_person_24"
+                android:backgroundTint="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="95dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Expert_name"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/Position"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/company_university"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_rounded_8dp_no_ripple">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_rounded_8dp_no_ripple"
+            android:backgroundTint="@color/teal_primary"
+            android:paddingTop="5dp"
+            android:text="@string/Introduction"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_rounded_8dp_no_ripple"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_rounded_8dp_no_ripple"
+            android:backgroundTint="@color/teal_primary"
+            android:paddingTop="5dp"
+            android:text="@string/order_expert"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_requirement"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/white"
+            android:hint="@string/hint_requirement"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/black" />
+
+        <TextView
+            android:id="@+id/btn_send"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_rounded_8dp_no_ripple"
+            android:backgroundTint="@color/teal_primary"
+            android:paddingTop="5dp"
+            android:text="@string/send"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
