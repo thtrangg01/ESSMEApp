@@ -11,9 +11,9 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.viewbinding.ViewBinding;
 
 abstract public class BaseFragment<VB extends ViewBinding, VM extends BaseViewModel> extends BaseCoreFragment {
-    protected VB binding;
     protected VM viewModel;
     protected IFragmentInflate<VB> inflate;
+    protected VB binding;
 
     public BaseFragment(IFragmentInflate<VB> inflate) {
         this.inflate = inflate;
