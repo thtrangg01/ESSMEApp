@@ -20,7 +20,6 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-
 public class ExpertDetailFragment extends BaseViewBindingFragment<FragmentExpertDetailBinding> {
     private Expert expert;
     private AlertDialog.Builder builder;

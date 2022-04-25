@@ -2,7 +2,6 @@ package com.example.essmeapp.model;
 
 import com.google.gson.annotations.SerializedName;
 
-
 public class Response {
     private String content;
     @SerializedName("expert_id")

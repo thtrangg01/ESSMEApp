@@ -2,6 +2,7 @@ package com.example.essmeapp.codebase;
 
 import android.content.Context;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -10,12 +11,12 @@ import androidx.viewbinding.ViewBinding;
 
 import java.util.ArrayList;
 
-
 abstract public class BaseSimpleAdapter<T, VB extends ViewBinding, VH extends BaseSimpleAdapter.ViewHolder<VB>>
         extends RecyclerView.Adapter<VH> {
 
     protected IFragmentInflate<VB> inflate;
     protected ArrayList<T> data = new ArrayList<>();
+    protected IOnItemClickListener onItemClickListener;
 
     public BaseSimpleAdapter(IFragmentInflate<VB> inflate) {
         this.inflate = inflate;
@@ -50,7 +51,19 @@ abstract public class BaseSimpleAdapter<T, VB extends ViewBinding, VH extends Ba
 
     public abstract VH getViewHolder(VB binding);
 
-    public abstract static class ViewHolder<VB extends ViewBinding> extends RecyclerView.ViewHolder {
+    public void registerOnItemClickListener(ViewHolder<VB> holder) {
+        View view = holder.itemView;
+        view.setOnClickListener(view1 -> {
+            int position = holder.getBindingAdapterPosition();
+            onItemClickListener.onItemClicked(position);
+        });
+    }
+
+    public void setOnItemClickListener(IOnItemClickListener onItemClickListener) {
+        this.onItemClickListener = onItemClickListener;
+    }
+
+    protected abstract static class ViewHolder<VB extends ViewBinding> extends RecyclerView.ViewHolder {
         protected VB binding;
 
         public ViewHolder(@NonNull VB binding) {

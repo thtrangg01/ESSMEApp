@@ -4,7 +4,6 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
 
-
 public class Request {
     private ArrayList<String> topic;
     @SerializedName("Title")
@@ -20,6 +19,10 @@ public class Request {
     }
 
     public Request() {
+    }
+
+    public Request(String title) {
+        this.title = title;
     }
 
     public Request(ArrayList<String> topic, String title, String content, String customerId, String uid) {

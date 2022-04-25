@@ -11,24 +11,21 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.viewbinding.ViewBinding;
 
 abstract public class BaseFragment<VB extends ViewBinding, VM extends BaseViewModel> extends BaseCoreFragment {
+    protected VB binding;
     protected VM viewModel;
     protected IFragmentInflate<VB> inflate;
-    protected VB binding;
 
     public BaseFragment(IFragmentInflate<VB> inflate) {
         this.inflate = inflate;
     }
 
-    protected abstract Class<VM> getViewModel();
-    
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
-            @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         binding = inflate.inflate(inflater, container, false);
         viewModel = new ViewModelProvider(this).get(getViewModel());
         return binding.getRoot();
     }
 
-   
+    protected abstract Class<VM> getViewModel();
 }

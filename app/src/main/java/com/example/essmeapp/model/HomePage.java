@@ -4,7 +4,6 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-
 public class HomePage {
     @SerializedName("top_experts")
     private List<Expert> topExperts;
