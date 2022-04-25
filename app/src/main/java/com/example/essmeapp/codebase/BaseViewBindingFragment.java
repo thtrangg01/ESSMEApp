@@ -9,7 +9,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 
-
 abstract public class BaseViewBindingFragment<VB extends ViewBinding> extends BaseCoreFragment {
     protected VB binding;
     protected IFragmentInflate<VB> inflate;

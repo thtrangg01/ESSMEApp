@@ -2,48 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="30dp"
-    android:layout_marginTop="100dp"
-    android:layout_marginRight="30dp"
-    android:layout_marginBottom="100dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="@dimen/d_16">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="580dp"
         android:background="@drawable/bg_rounded_8dp_no_ripple"
         android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/pie_rectangle_8dp_stroke_left"
-                android:paddingTop="13dp"
-                android:text="EXPERT"
-                android:textAlignment="center"
-                android:textAllCaps="true"
-                android:textColor="@color/black"
-                android:textSize="17dp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/pie_rectangle_8dp_right"
-                android:paddingTop="13dp"
-                android:text="customer"
-                android:textAlignment="center"
-                android:textAllCaps="true"
-                android:textColor="@color/black"
-                android:textSize="17dp"
-                android:textStyle="bold" />
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -174,10 +140,11 @@
 
     <TextView
         android:layout_width="80dp"
-        android:layout_height="30dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="@dimen/d_16"
         android:background="@drawable/pie_btn_8dp"
+        android:padding="@dimen/d_8"
         android:paddingTop="5dp"
         android:text="SAVE"
         android:textAlignment="center"

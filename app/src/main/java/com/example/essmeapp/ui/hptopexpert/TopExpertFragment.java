@@ -7,7 +7,6 @@ import com.example.essmeapp.codebase.BaseViewBindingFragment;
 import com.example.essmeapp.databinding.FragmentTopExpertBinding;
 import com.example.essmeapp.model.Expert;
 
-
 public class TopExpertFragment extends BaseViewBindingFragment<FragmentTopExpertBinding> {
 
     public TopExpertFragment() {

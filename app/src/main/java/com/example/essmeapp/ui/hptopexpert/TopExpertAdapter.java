@@ -25,9 +25,9 @@ public class TopExpertAdapter extends FragmentStateAdapter {
         Expert expert = experts.get(position);
         Bundle bundle = new Bundle();
         bundle.putSerializable("expert", expert);
-        TopExpertFragment expertFragment = new TopExpertFragment();
-        expertFragment.setArguments(bundle);
-        return expertFragment;
+        TopExpertFragment topExpertFragment = new TopExpertFragment();
+        topExpertFragment.setArguments(bundle);
+        return topExpertFragment;
     }
 
     @Override
