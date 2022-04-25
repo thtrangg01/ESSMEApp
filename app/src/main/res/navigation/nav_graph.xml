@@ -41,6 +41,9 @@
         <action
             android:id="@+id/action_accountFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_fragmentOrderExpert"
+            app:destination="@id/fragmentOrderExpert" />
     </fragment>
     <fragment
         android:id="@+id/FQAsFragment"
@@ -50,7 +53,7 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.essmeapp.ui.LoginFragment"
-        tools:layout="@layout/activity_login"
+        tools:layout="@layout/fragment_login"
         android:label="LoginFragment" >
         <action
             android:id="@+id/action_loginFragment_to_homePageFragment"
@@ -59,5 +62,17 @@
     <fragment
         android:id="@+id/expertFragment"
         android:name="com.example.essmeapp.ui.listexpert.ExpertFragment"
-        android:label="ExpertFragment" />
+        android:label="ExpertFragment" >
+        <action
+            android:id="@+id/action_expertFragment_to_expertDetailFragment"
+            app:destination="@id/expertDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/expertDetailFragment"
+        android:name="com.example.essmeapp.ui.ExpertDetailFragment"
+        android:label="ExpertDetailFragment" />
+    <fragment
+        android:id="@+id/fragmentOrderExpert"
+        android:name="com.example.essmeapp.ui.orderhistory.FragmentOrderExpert"
+        android:label="FragmentOrderExpert" />
 </navigation>
