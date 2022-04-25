@@ -1,6 +1,8 @@
 package com.example.essmeapp;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -51,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
-                .requestIdToken("730620184377-ump2k3lv5gk6dri7a26fccaa3vgognm4.apps.googleusercontent.com")
+                .requestIdToken("955088738310-ks6jjuuvkv0icuds7h8ank3s084r0tvs.apps.googleusercontent.com")
                 .build();
 
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
@@ -117,6 +119,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                         if (task.isSuccessful()) {
                                             String idToken = task.getResult().getToken();
                                             Log.d(TAG, "1 " + idToken);
+                                            SharedPreferences sharedPref = getSharedPreferences(getString(R.string.preference_file_key), Context.MODE_PRIVATE);
+                                            SharedPreferences.Editor editor = sharedPref.edit();
+                                            editor.putString(getString(R.string.auth_token), idToken);
+                                            editor.putString("id", mAuth.getCurrentUser().getUid());
+                                            editor.apply();
                                             // ...
                                         } else {
                                             // Handle error -> task.getException();
