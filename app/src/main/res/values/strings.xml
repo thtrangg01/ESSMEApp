@@ -7,4 +7,7 @@
     <string name="common_account">Account</string>
     <string name="fqas">FQAs</string>
     <string name="leading_expert">Leading Expert</string>
+    <string name="Expert_name">Expert Name</string>
+    <string name="Position">Position</string>
+    <string name="company_university">Company/University</string>
 </resources>
