@@ -1,17 +1,16 @@
 package com.example.essmeapp;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.fragment.NavHostFragment;
-import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -20,19 +19,16 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.auth.GetTokenResult;
 import com.google.firebase.auth.GoogleAuthProvider;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     private final String TAG = this.getClass().getSimpleName();
+    LinearLayout btnSignIn;
+    Button signout;
 
-    BottomNavigationView bottomNavigationView;
-    LinearLayout toolbar;
-    NavController navController;
     FirebaseAuth mAuth;
     GoogleSignInClient mGoogleSignInClient;
     int RC_SIGN_IN = 0;
@@ -40,18 +36,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
-        toolbar = findViewById(R.id.toolbar);
-        bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        signout = findViewById(R.id.sign_out_button);
+        btnSignIn = findViewById(R.id.btnSignIn);
 
-        NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.navHostMain);
-        navController = navHostFragment.getNavController();
-        NavigationUI.setupWithNavController(bottomNavigationView, navController);
+        btnSignIn.setOnClickListener(this);
+        signout.setOnClickListener(this);
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
-                .requestIdToken("955088738310-ks6jjuuvkv0icuds7h8ank3s084r0tvs.apps.googleusercontent.com")
+                .requestIdToken("1052039473309-2jgjhto7g7h3agusr0abvi5tji2dmt68.apps.googleusercontent.com")
                 .build();
 
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
@@ -59,28 +54,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
-    protected void onStart() {
-        super.onStart();
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        updateUI(currentUser);
-    }
-
-    @Override
     public void onClick(View view) {
-    }
-
-    private void updateUI(FirebaseUser currentUser) {
-        if (currentUser != null) {
-            toolbar.setVisibility(View.VISIBLE);
-            bottomNavigationView.setVisibility(View.VISIBLE);
-            navController.navigate(R.id.action_loginFragment_to_homePageFragment);
-        } else {
-            toolbar.setVisibility(View.GONE);
-            bottomNavigationView.setVisibility(View.GONE);
+        switch (view.getId()) {
+            case R.id.btnSignIn:
+                signIn();
+                break;
+            case R.id.sign_out_button:
+                signOut();
+                break;
         }
     }
 
-    public void signIn() {
+    private void signIn() {
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
         startActivityForResult(signInIntent, RC_SIGN_IN);
     }
@@ -111,30 +96,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     if (task.isSuccessful()) {
                         Log.d(TAG, "signInWithCredential:success");
                         FirebaseUser user = mAuth.getCurrentUser();
-                        user.getIdToken(true)
-                                .addOnCompleteListener(new OnCompleteListener<GetTokenResult>() {
-                                    public void onComplete(@NonNull Task<GetTokenResult> task) {
-                                        if (task.isSuccessful()) {
-                                            String idToken = task.getResult().getToken();
-                                            Log.d(TAG, "1 " + idToken);
-                                            // ...
-                                        } else {
-                                            // Handle error -> task.getException();
-                                        }
-                                    }
-                                });
-                        Log.d(TAG, idToken);
-                        updateUI(user);
+                        Log.d(TAG, "signInWithCredential:success" + user.getDisplayName());
                     } else {
                         Log.w(TAG, "signInWithCredential:failure", task.getException());
                     }
                 });
+
     }
 
-    public void signOut() {
-        mAuth.signOut();
-        Log.d(TAG, "Sign out successful...");
-        navController.navigate(R.id.action_accountFragment_to_loginFragment);
-        updateUI(null);
+    private void signOut() {
+        mGoogleSignInClient.signOut()
+                .addOnCompleteListener(this, new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        Log.d(TAG, "Sign out...");
+                    }
+                });
     }
 }
