@@ -29,6 +29,7 @@
                 android:background="@drawable/pie_rectangle_4dp_stroke"
                 android:hint="ENTER NAME"
                 android:paddingLeft="10dp"
+                android:textColor="@color/black"
                 android:textColorHint="@color/black"
                 android:textSize="13dp"
                 android:textStyle="bold" />
@@ -42,6 +43,7 @@
                 android:background="@drawable/pie_rectangle_4dp_stroke"
                 android:hint="ENTER PHONE NUMBER"
                 android:paddingLeft="10dp"
+                android:textColor="@color/black"
                 android:textColorHint="@color/black"
                 android:textSize="13dp"
                 android:textStyle="bold" />
@@ -55,6 +57,7 @@
                 android:background="@drawable/pie_rectangle_4dp_stroke"
                 android:hint="ENTER ADDRESS"
                 android:paddingLeft="10dp"
+                android:textColor="@color/black"
                 android:textColorHint="@color/black"
                 android:textSize="13dp"
                 android:textStyle="bold" />
@@ -68,6 +71,7 @@
                 android:background="@drawable/pie_rectangle_4dp_stroke"
                 android:hint="ENTER EMAIL"
                 android:paddingLeft="10dp"
+                android:textColor="@color/black"
                 android:textColorHint="@color/black"
                 android:textSize="13dp"
                 android:textStyle="bold" />
@@ -92,6 +96,7 @@
                 android:background="@drawable/pie_rectangle_4dp_stroke"
                 android:hint="ENTER RESEARCH AREA"
                 android:paddingLeft="10dp"
+                android:textColor="@color/black"
                 android:textColorHint="@color/black"
                 android:textSize="13dp"
                 android:textStyle="bold" />
@@ -105,6 +110,7 @@
                 android:background="@drawable/pie_rectangle_4dp_stroke"
                 android:hint="ENTER DEGREE"
                 android:paddingLeft="10dp"
+                android:textColor="@color/black"
                 android:textColorHint="@color/black"
                 android:textSize="13dp"
                 android:textStyle="bold" />
@@ -118,6 +124,7 @@
                 android:background="@drawable/pie_rectangle_4dp_stroke"
                 android:hint="ENTER COMPANY"
                 android:paddingLeft="10dp"
+                android:textColor="@color/black"
                 android:textColorHint="@color/black"
                 android:textSize="13dp"
                 android:textStyle="bold" />
@@ -131,6 +138,7 @@
                 android:background="@drawable/pie_rectangle_4dp_stroke"
                 android:hint="ENTER PROJECT NAME/LINKS"
                 android:paddingLeft="10dp"
+                android:textColor="@color/black"
                 android:textColorHint="@color/black"
                 android:textSize="13dp"
                 android:textStyle="bold" />
